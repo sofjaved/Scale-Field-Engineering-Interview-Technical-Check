@@ -1,0 +1,86 @@
+{
+    "projectName": "Traffic Sign Detection",
+    "qualityChecks": [
+        {
+            "task_id": "5f127f6f26831d0010e985e5",
+            "checkBackgroundColor": {
+                "errors_uuids": [
+                    "ada7893a-3ee1-4d69-b06b-87240a9522cd",
+                    "df8c17ab-5055-480f-a75b-70561997b60b"
+                ]
+            },
+            "checkOcclusion": {
+                "warnings_uuids": [
+                    "89e6b03e-1e6c-4ca3-9bc5-2660c1ddd768",
+                    "1b048402-5527-4b89-8a76-09fbe61735a0"
+                ]
+            }
+        },
+        {
+            "task_id": "5f127f6c3a6b1000172320ad",
+            "checkTruncation": {
+                "errors_uuids": [
+                    "0bc2ab2c-16b0-461e-8866-08f3bdc87238"
+                ]
+            }
+        },
+        {
+            "task_id": "5f127f671ab28b001762c204",
+            "checkOcclusion": {
+                "warnings_uuids": [
+                    "64eb36b3-aa8f-4672-8e2c-2504e728187d",
+                    "00610d41-fd17-4e9a-97ff-6d33e07102ad",
+                    "b6e4e79a-9640-43e0-9c7f-a6094c46b642",
+                    "23982f64-a487-45ba-9114-2e87431f6cda",
+                    "55f17c73-b2ae-4aeb-866e-b296cc881476"
+                ],
+                "errors_uuids": [
+                    "af326982-eaf5-44c1-92dd-13b6ab715c4d"
+                ]
+            }
+        },
+        {
+            "task_id": "5f127f5f3a6b100017232099",
+            "checkTruncation": {
+                "errors_uuids": [
+                    "27f4e6b1-188f-4e92-8a3e-cd9dcee139c2"
+                ],
+                "warnings_uuids": [
+                    "1f4105b0-8651-4fdf-b673-b74136f56ad6",
+                    "08333b85-b375-447f-a66f-99f1b053fe9c",
+                    "04e71569-03c4-48d6-b566-982df88560ff",
+                    "860bbaaf-b080-46e6-b8a4-80a0ca38b946"
+                ]
+            },
+            "checkOcclusion": {
+                "warnings_uuids": [
+                    "ae0b82b0-76bf-4c14-9dce-7766da968ad3",
+                    "3523b86f-1429-4300-a225-a4b13612ad31",
+                    "daeedc6f-3c26-4eed-9adb-c4454b7b0695",
+                    "478496a5-1d09-4d53-889a-ef56a561b54b"
+                ]
+            },
+            "checkBoxSize": {
+                "warnings_uuids": [
+                    "25e6e90c-7acb-4786-a0fb-ca7b10fc3687"
+                ]
+            }
+        },
+        {
+            "task_id": "5f127f5ab1cb1300109e4ffc",
+            "checkBackgroundColor": {
+                "errors_uuids": [
+                    "879a6a14-a842-4d4d-b8a0-69e29720ec46",
+                    "f631300f-5a36-4e2a-a093-eb3f4d911577",
+                    "39d634f5-df0e-4ef6-b327-06d467d68e64"
+                ]
+            },
+            "checkOcclusion": {
+                "warnings_uuids": [
+                    "c4e5748f-0886-40a6-b819-ab4ce1ea81f8",
+                    "3fb2176f-3801-408e-aa22-76519f8dcb91"
+                ]
+            }
+        }
+    ]
+}
