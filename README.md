@@ -2,8 +2,8 @@
 
 [Reflection on future quality checks.](https://docs.google.com/document/d/1FiqnkiXVjJsvFi6cdFsnlTSUslOMWtw-Pkaax5MyKIA/edit?usp=sharing)
 
-Sofia Javed - Scale Field Engineering Interview Technical Check
-Client: **ObserveSign**
+Sofia Javed - Scale Field Engineering Interview Technical Check\
+Client: **ObserveSign**\
 Scale project name: **Traffic Sign Detection**
 
 **Overview:**
