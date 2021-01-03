@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 const fs = require("fs");
 
 //NOTE: To generate a quality checks report for the Traffic Sign Detection project, uncomment the line below and run the script:
-qualityChecks("Traffic Sign Detection");
+// qualityChecks("Traffic Sign Detection");
 
 //Fetch all tasks in the project and run quality checks:
 
