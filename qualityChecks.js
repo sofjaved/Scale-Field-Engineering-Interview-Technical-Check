@@ -4,7 +4,7 @@ const fs = require("fs");
 //NOTE: To generate a quality checks report for the Traffic Sign Detection project, uncomment the line below and run the script:
 // qualityChecks("Traffic Sign Detection");
 
-//Fetch all tasks in the project and run quality checks:
+//Fetch all tasks in the project, run quality checks, and write results to JSON file:
 
 function qualityChecks(projectName) {
   let url = "https://api.scale.com/v1/tasks?project=" + projectName.split(" ").join("%20");
