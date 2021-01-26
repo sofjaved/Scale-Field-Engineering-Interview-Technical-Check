@@ -22,6 +22,6 @@ The script outputs a report in a JSON file (**Traffic_Sign_Detection_Quality_Che
 
 To generate a quality checks report for the “Traffic Sign Detection” project, uncomment the following line at the top of the script before running the script:
 
-//qualityChecks(“Traffic Sign Detection);
+//qualityChecks(“Traffic Sign Detection");
 
 **NOTE:** The fetch tasks API call displays a maximum of 100 results per page. If the project has more than 100 images/task responses, the code must be adjusted to run the checks for 100 tasks at a time.
