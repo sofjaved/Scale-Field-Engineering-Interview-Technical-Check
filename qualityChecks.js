@@ -6,33 +6,28 @@ const fs = require("fs");
 
 //Fetch all tasks in the project, run quality checks, and write results to JSON file:
 
-function qualityChecks(projectName) {
-  let url = "https://api.scale.com/v1/tasks?project=" + projectName.split(" ").join("%20");
-  fetch(url, {
+async function qualityChecks(projectName) {
+  try {
+    let url = "https://api.scale.com/v1/tasks?project=" + projectName.split(" ").join("%20");
+    let result = await fetch(url, {
     "method": "GET",
     "headers": {
       "Authorization": "Basic bGl2ZV83NDI3NWI5YjJiOGI0NGQ4YWQxNTZkYjAzZDIwMDhlZDo="
     }
-  })
-  .then(response => {
-    return response.json();
-  })
-  .then(response => {
-   return runChecks(projectName, response.docs);
-  })
-  .then(response => {
-    let fileName = projectName.split(" ").join('_') + '_Quality_Checks.json'
+    });
+    result = await result.json();
+    let response = runChecks(projectName, result.docs);
+    let fileName = projectName.split(" ").join('_') + '_Quality_Checks.json';
     fs.writeFile(fileName, JSON.stringify(response, null, 4), (err) => {
-        if (err) {
-            console.error(err);
-            return;
-        };
-        console.log(`File has been created: ${fileName}`);
-      });
-   })
-  .catch(err => {
-    console.error(err);
-  });
+          if (err) {
+              console.error(err);
+              return;
+          };
+          console.log(`File has been created: ${fileName}`);
+        });
+    } catch (error) {
+    console.error(error);
+  }
 }
 
 //Helper functions:
